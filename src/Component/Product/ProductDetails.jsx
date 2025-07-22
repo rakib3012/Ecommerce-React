@@ -6,10 +6,10 @@ import { productCartContext } from "../CartContext/CartContext";
 
 
 
-export default function ProductDetails() {
+export default function ProductDetails( ) {
 
-const cartContext = useContext(productCartContext);
-const{AddToCartHandler}= cartContext;
+ 
+ const {AddToCartHandler}= useContext(productCartContext)
   const productId = useParams();
   console.log('product details page er console productid type check params thaka pawa'+productId);
   const id = productId.productId;
