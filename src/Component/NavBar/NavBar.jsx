@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react'
+ 
 import { Outlet } from 'react-router'
 import { useQuery } from '@tanstack/react-query'
 import Nav from './Nav'
 import { createContext } from 'react'
 import Footer from '../Footer/Footer'
-import Feture from '../Home/Feture'
+ 
 
 export const dataContext = createContext();
 

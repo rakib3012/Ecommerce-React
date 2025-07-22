@@ -17,6 +17,8 @@ import ProductDetails from "../Product/ProductDetails";
 import AddToCart from "../AddToCart/AddToCart";
 import CartContext from "../CartContext/CartContext";
 import Cart from "../Product/Cart";
+import Shipping from "../NavBar/Shipping/Shipping";
+import Order from "../Order/Order";
  
 
 
@@ -44,6 +46,7 @@ export default function Layout() {
            
           element: <ProductDetails />
         },
+      
         {
           path:'/addtocart',
           element: <AddToCart/>
@@ -59,7 +62,12 @@ export default function Layout() {
         {
           path: '/contact',
           element: <Contact />
-        }
+        },
+          {
+          path : '/order',
+           
+          element : <Order />
+        },
       ]
     },
 
